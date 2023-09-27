@@ -38,6 +38,10 @@ spring:
           uri: lb://review-service
           predicates:
             - Path=/api/v1/reviews/**
+        - id: new-service
+          uri: lb://new-service
+          predicates:
+            - Path=/api/v1/news/**
 
 logging:
   level:
