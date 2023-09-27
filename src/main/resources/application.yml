@@ -30,6 +30,10 @@ spring:
           uri: lb://doctor-service
           predicates:
             - Path=/api/v1/doctors/**
+        - id: appointment-service
+          uri: lb://appointment-service
+          predicates:
+            - Path=/api/v1/appointments/**
 
 logging:
   level:
