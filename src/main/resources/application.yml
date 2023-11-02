@@ -45,7 +45,7 @@ spring:
         - id: prescription-service
           uri: lb://prescription-service
           predicates:
-            - Path=/api/v1/prescriptions/
+            - Path=/api/v1/prescriptions/**
         - id: medical-history-service
           uri: lb://medical-history-service
           predicates:
